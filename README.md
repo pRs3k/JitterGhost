@@ -47,6 +47,9 @@ To install the micropython_dfplayer python module, head to https://github.com/re
  - DRV8833(IN1) to Pico(GP15)
  - DRV8833(OUT1) to Motor(either terminal)
  - DRV8833(OUT2) to Motor(other terminal)
+ - PIR(GND) to Pico(GND)
+ - PIR(High/Low Output) to Pico(GP28)
+ - PIR(+Power) to Pico(VBUS)
 
 ## Future Enhancements
 

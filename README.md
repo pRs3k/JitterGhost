@@ -54,12 +54,12 @@ To install the micropython_dfplayer python module, head to https://github.com/re
  - PIR(+Power) to Pico(VBUS)
 
  ### Capacitors
-DFPlayer(GND) to Capacitor(-)
-DFPlayer(VCC) to Capacitor(+)
-DRV8833(GND) to Capacitor(-)
-DRV8833(VCC) to Capacitor(+)
-Pico(GND) to Capacitor(-) <--This is bridging the wires from the PIR
-Pico (VCC) to Capacitor(+) <--This is bridging the wires from the PIR
+- DFPlayer(GND) to Capacitor(-)
+- DFPlayer(VCC) to Capacitor(+)
+- DRV8833(GND) to Capacitor(-)
+- DRV8833(VCC) to Capacitor(+)
+- Pico(GND) to Capacitor(-) <--This is bridging the wires from the PIR
+- Pico (VCC) to Capacitor(+) <--This is bridging the wires from the PIR
 
 ## Future Enhancements
 

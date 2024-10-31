@@ -1,5 +1,7 @@
 # JitterGhost
-This repository contains instructions and code for building your own shaking ghost Halloween decoration, like the ones from the 90s, only yours will be fully customizable! You pick the sounds, light colors, shake intensity, motion sensitivity, duration, and sleep time! You will also have the opportunity to exercise your artistic abilities in decorating the ghost face however you like.
+This repository contains instructions and code for building your own shaking, blinking, noise making gadget! You pick the sounds, light colors, shake intensity, motion sensitivity, duration, and sleep time! After assembling the circuitry, you can easily swap out the script to change your gadget on the fly. The following designs are available so far.
+- Halloween Ghost: Like the ones from the 90s, only yours will be fully customizable! You will also have the opportunity to exercise your artistic abilities in decorating the ghost cloth however you like.
+- Half-Life Houndeye: The tripedal cuties from the hit game Half-Life
 
 ## Features
 - Bring your own sound clips (HD audio supported)
@@ -37,7 +39,7 @@ To install the micropython_dfplayer python module, head to https://github.com/re
  - Pico(GP0) to DFPlayer(RX)
  - Pico(GP1) to DFPlayer(TX)
  - Pico(GND) to DFPlayer(GND)
- - Pico(3V3 OUT) to DFPlayer(VCC)
+ - Pico(VCC) to DFPlayer(VCC)
  - Pico(SPK1) to Speaker(Red)
  - Pico(SPK2) to Speaker(Blk)
  - DRV8833(GND) to Pico(GND)
@@ -50,6 +52,14 @@ To install the micropython_dfplayer python module, head to https://github.com/re
  - PIR(GND) to Pico(GND)
  - PIR(High/Low Output) to Pico(GP28)
  - PIR(+Power) to Pico(VBUS)
+
+ ### Capacitors
+DFPlayer(GND) to Capacitor(-)
+DFPlayer(VCC) to Capacitor(+)
+DRV8833(GND) to Capacitor(-)
+DRV8833(VCC) to Capacitor(+)
+Pico(GND) to Capacitor(-) <--This is bridging the wires from the PIR
+Pico (VCC) to Capacitor(+) <--This is bridging the wires from the PIR
 
 ## Future Enhancements
 
